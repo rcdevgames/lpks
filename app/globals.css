@@ -1,19 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --bg: #07070b;
-  --accent-cyan: #22d3ee;
-  --accent-blue: #3b82f6;
-  --accent-violet: #8b5cf6;
+@layer base {
+  :root {
+    --bg: #07070b;
+    --accent-cyan: #22d3ee;
+    --accent-blue: #3b82f6;
+    --accent-violet: #8b5cf6;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.15), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(139, 92, 246, 0.1), transparent),
+      var(--bg);
+    color: #e4e4e7;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-body {
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.15), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(139, 92, 246, 0.1), transparent),
-    var(--bg);
-  color: #e4e4e7;
-  min-height: 100vh;
+/* mobile viewport adjustment */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  section {
+    padding-top: 80px; /* offset for fixed nav */
+  }
 }
 
 /* glass card */

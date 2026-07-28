@@ -15,6 +15,15 @@ export const metadata = {
   title: "LPKS — PT. Logika Programmer Kode Solusi",
   description: "Teknologi yang Solusi. Membangun Masa Digital yang Lebih Cerdas.",
   icons: { icon: "/favicon.png" },
+  openGraph: {
+    type: "website",
+    title: "LPKS",
+    description: "Teknologi yang Solusi",
+    images: ["/lpks/logo.png"],
+  },
+  mobileAlternate: {
+    title: "LPKS - PT. Logika Programmer Kode Solusi",
+  },
 };
 
 export default function RootLayout({ children }) {
