@@ -1,0 +1,1 @@
+I need to read all the files to extract the knowledge graph. Let me start by reading each file.
