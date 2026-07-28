@@ -25,7 +25,7 @@ const portfolioItems = [
 ];
 
 const teamMembers = [
-  { name: "Nurdontol Herlambang", role: "CEO", initials: "NH", highlight: true },
+  { name: "Nurdian Herlambang", role: "CEO", initials: "NH", highlight: true },
   { name: "Sandi", role: "Lead Developer", initials: "SA" },
   { name: "Raynard", role: "Developer Engineer", initials: "RA" },
   { name: "Rian", role: "Developer Engineer", initials: "RI" },
